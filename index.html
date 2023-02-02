@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <!-- link custom css -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- linking normalise css -->
+    <link rel="stylesheet" href="./styles/normalise.css" />
+    <title>Intercative Pricing component</title>
+  </head>
+  <body>
+    <div class="title-container">
+      <h1 class="title">Simple, traffic-based pricing</h1>
+      <p class="details">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+    </div>
+
+    <div class="the-main-card">
+      <div class="page-container">
+        <p class="page-views"><span id="views">100k </span> pageviews</p>
+
+        <div class="page-amount">
+          <p class="desktop">$<span id="amount">16</span>.00</p>
+          <p class="desktop-month">/month</p>
+        </div>
+      </div>
+      <div class="range-slider">
+        <input
+          type="range"
+          max="4"
+          min="0"
+          id="price-slider"
+          class="range-input"
+          value="2"
+        />
+      </div>
+      <div class="page-amount">
+        <p class="mobile">$<span id="amount-mob">16</span>.00</p>
+        <p class="mobile-month">/month</p>
+      </div>
+      <div class="toggle-container">
+        <p class="billing" id="monthly">Monthly</p>
+
+        <!-- toggle -->
+        <label class="switch">
+          <input type="checkbox" name="billing" id="billing" />
+          <span class="toggle-slider"></span>
+        </label>
+
+        <div class="span-discount">
+          <p class="billing" id="yearly">Yearly</p>
+          <span class="discount-mobile">-25%</span>
+          <span class="discount-desktop">-25% percent</span>
+        </div>
+      </div>
+      <hr />
+
+      <div class="bottom-container">
+        <div class="list-container">
+          <div class="benifits-para">
+            <img src="./images/icon-check.svg" alt="" class="image" />
+            <p class="para">unlimited websites</p>
+          </div>
+          <div class="benifits-para">
+            <img src="./images/icon-check.svg" alt="" class="image" />
+            <p class="para">100% data ownership</p>
+          </div>
+          <div class="benifits-para">
+            <img src="./images/icon-check.svg" alt="" class="image" />
+            <p class="para">Email reports</p>
+          </div>
+        </div>
+        <div class="button-container">
+          <button class="btn-start">Start my trial</button>
+        </div>
+      </div>
+    </div>
+    <!-- link script -->
+    <script src="./script/script.js"></script>
+  </body>
+</html>
